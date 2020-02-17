@@ -16,9 +16,55 @@
   width: 100%;
 }
 
+.box-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  width: 50%;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: center;
+}
+
+.box-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  width: 50%;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lista-menu li {
+  display: inline-block;
+  margin: 18px;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 160px;
+}
+
+.logo-header img {
+  height: 30px;
+  width: 30px;
+}
+
+.logo-header .name {
+  margin-left: 10px;
+}
+
 .jumbo {
   background-color: pink;
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
 

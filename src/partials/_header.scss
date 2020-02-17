@@ -8,8 +8,50 @@
   height: 90px;
   width: 100%;
 }
+.box-list {
+  @include display-flex;
+  height: 90px;
+  width: 50%;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: center;
+}
+.box-logo {
+  @include display-flex;
+  height: 90px;
+  width: 50%;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lista-menu {
+  & li {
+    display: inline-block;
+    margin: 18px;
+  }
+}
+.logo-header {
+  @include display-flex;
+  margin-left: 160px;
+  & img {
+    height: 30px;
+    width: 30px;
+  }
+  .name {
+    margin-left: 10px;
+  }
+}
+
+
+
+
+
+
 .jumbo {
   background-color: pink;
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
