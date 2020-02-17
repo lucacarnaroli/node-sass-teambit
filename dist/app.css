@@ -4,41 +4,29 @@
   padding: 0;
 }
 
-.box-header {
-  height: 700px;
-  width: 100%;
-  background-color: red;
+body {
+  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  color: #58402D;
 }
 
-.navbar {
-  background-color: blue;
+.box-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   height: 90px;
-  width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .box-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 90px;
-  width: 50%;
-  background-color: grey;
-  position: absolute;
-  right: 0;
-  top: 0;
-  justify-content: center;
-}
-
-.box-logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 90px;
-  width: 50%;
-  background-color: green;
-  position: absolute;
-  left: 0;
-  top: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 800px;
 }
 
 .lista-menu li {
@@ -46,25 +34,155 @@
   margin: 18px;
 }
 
-.logo-header {
+.button-sign-up {
+  padding: 7px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 95px;
+  color: #30488F;
+  border: 1px solid #30488F;
+}
+
+.button-sign-up:hover {
+  background-color: #30488F;
+  color: white;
+}
+
+.box-logo {
+  width: 290px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 160px;
+  flex-wrap: wrap;
+  z-index: 2;
 }
 
-.logo-header img {
+.box-logo .logo-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.box-logo .logo-header img {
   height: 30px;
   width: 30px;
 }
 
-.logo-header .name {
+.box-logo .logo-header .name {
   margin-left: 10px;
 }
 
 .jumbo {
-  background-color: pink;
-  height: 550px;
   width: 100%;
+}
+
+.jumbo .jumbo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jumbo .jumbo-box .section-left {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.jumbo .jumbo-box .section-left .text-jumbo {
+  margin-top: 100px;
+  font-size: 45px;
+  margin-bottom: 50px;
+  width: 70%;
+}
+
+.jumbo .jumbo-box .section-left p {
+  font-size: 20px;
+  width: 70%;
+  margin-bottom: 50px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.jumbo .jumbo-box .section-rigth {
+  width: 600px;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.jumbo .jumbo-box .section-rigth .img-header {
+  width: 100%;
+}
+
+.box-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  width: 70%;
+}
+
+.box-button button {
+  padding: 7px;
+  width: 190px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #30488F;
+  color: white;
+}
+
+.box-button button:hover {
+  background-color: #233569;
+}
+
+.box-button .or {
+  margin: 10px;
+}
+
+.icon-button {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.text-button-footer {
+  width: 70%;
+}
+
+.text-button-footer .fa-arrow-right {
+  font-size: 13px;
+}
+
+.text-button-footer a {
+  text-decoration: none;
+  color: #58402D;
+}
+
+@media screen and (max-width: 1000px) {
+  .box-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
+  src: local("HarmoniaSansProCyr-Regular"), url("https://teambit.io/wp-content/themes/teambeat/fonts/HarmoniaSansProCyr-Regular_gdi.woff") format("woff");
 }
 
