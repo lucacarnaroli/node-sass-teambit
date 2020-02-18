@@ -186,7 +186,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1138px) {
+@media screen and (max-width: 1060px) {
   .section-left {
     text-align: center;
   }
