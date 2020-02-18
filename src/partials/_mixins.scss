@@ -11,3 +11,24 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+@mixin button {
+  button {
+  padding: 7px;
+  width: 190px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: $colorBasicBlu;
+  color: white;
+  &:hover {
+    background-color: #233569;
+  }
+}
+@mixin textFooter {
+  & .fa-arrow-right {
+    font-size: 13px;
+  }
+  & a {
+    text-decoration: none;
+    color: $colorBasicBrow;
+  }
+}

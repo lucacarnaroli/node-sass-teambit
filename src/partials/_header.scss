@@ -31,10 +31,10 @@
   font-size: 15px;
   width: 95px;
   margin-left: 15px;
-  color: #30488F;
-  border: 1px solid #30488F;
+  color: $colorBasicBlu;
+  border: 1px solid $colorBasicBlu;
   &:hover {
-    background-color: #30488F;
+    background-color: $colorBasicBlu;
     color: white;
   }
 }
@@ -60,8 +60,6 @@
     justify-content: center;
     .section-left {
       width: 530px;
-      // background-color: grey;
-      // @include display-flex-colum;
       .text-jumbo {
         margin-top: 100px;
         font-size: 45px;
@@ -71,14 +69,14 @@
         font-size: 20px;
         width: $width;
         margin-bottom: 50px;
-        word-wrap:  break-word;
+        word-wrap: break-word;
       }
     }
     .section-rigth {
       max-width: 530px;
       @include display-flex;
       .img-header {
-        width: 100%;
+        width: $width;
       }
     }
   }
@@ -87,16 +85,7 @@
   @include display-flex;
   flex-wrap: nowrap;
   margin-bottom: 25px;
-button {
-  padding: 7px;
-  width: 190px;
-  border-radius: 8px;
-  font-size: 15px;
-  background-color: #30488F;
-  color: white;
-  &:hover {
-    background-color: #233569;
-  }
+  @include button;
  }
  & .or {
    margin: 10px;
@@ -107,16 +96,11 @@ button {
   margin-right: 3px;
 }
 .text-button-footer {
-  & .fa-arrow-right {
-    font-size: 13px;
-  }
-  & a {
-    text-decoration: none;
-    color: #58402D;
-  }
+  @include textFooter;
 }
-// mediaquery
-// s
+// ------------------------
+// MEDIAQUERY
+// small
 @media screen and (max-width: 767px){
   .box-list {
     display: none;
