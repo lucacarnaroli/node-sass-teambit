@@ -9,6 +9,14 @@ body {
   color: #58402D;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .box-navbar {
   display: flex;
   flex-direction: row;
@@ -17,21 +25,22 @@ body {
   justify-content: center;
   flex-wrap: nowrap;
   height: 90px;
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid black;
+  width: 80%;
 }
 
 .box-list {
+  width: 200%;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 800px;
 }
 
 .lista-menu li {
   display: inline-block;
-  margin: 18px;
+  margin-left: 15px;
 }
 
 .button-sign-up {
@@ -39,6 +48,7 @@ body {
   border-radius: 8px;
   font-size: 15px;
   width: 95px;
+  margin-left: 15px;
   color: #30488F;
   border: 1px solid #30488F;
 }
@@ -49,12 +59,11 @@ body {
 }
 
 .box-logo {
-  width: 290px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  z-index: 2;
 }
 
 .box-logo .logo-header {
@@ -75,10 +84,6 @@ body {
   margin-left: 10px;
 }
 
-.jumbo {
-  width: 100%;
-}
-
 .jumbo .jumbo-box {
   display: flex;
   flex-direction: row;
@@ -88,32 +93,25 @@ body {
 }
 
 .jumbo .jumbo-box .section-left {
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  width: 40%;
 }
 
 .jumbo .jumbo-box .section-left .text-jumbo {
   margin-top: 100px;
   font-size: 45px;
   margin-bottom: 50px;
-  width: 70%;
+  width: 100%;
 }
 
 .jumbo .jumbo-box .section-left p {
   font-size: 20px;
-  width: 70%;
+  width: 100%;
   margin-bottom: 50px;
   word-wrap: break-word;
-  word-break: break-all;
 }
 
 .jumbo .jumbo-box .section-rigth {
-  width: 600px;
-  padding: 3%;
+  max-width: 530px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -129,14 +127,13 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 25px;
-  width: 70%;
 }
 
 .box-button button {
   padding: 7px;
   width: 190px;
-  margin: 5px;
   border-radius: 8px;
   font-size: 15px;
   background-color: #30488F;
@@ -156,10 +153,6 @@ body {
   margin-right: 3px;
 }
 
-.text-button-footer {
-  width: 70%;
-}
-
 .text-button-footer .fa-arrow-right {
   font-size: 13px;
 }
@@ -169,13 +162,25 @@ body {
   color: #58402D;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
   .box-list {
     display: none;
   }
+
+  .box-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .text-button-footer {
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 767px) {
   .hamburger-menu {
     display: none;
   }
