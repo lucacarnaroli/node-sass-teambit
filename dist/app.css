@@ -93,14 +93,13 @@ body {
 }
 
 .jumbo .jumbo-box .section-left {
-  width: 40%;
+  width: 530px;
 }
 
 .jumbo .jumbo-box .section-left .text-jumbo {
   margin-top: 100px;
   font-size: 45px;
   margin-bottom: 50px;
-  width: 100%;
 }
 
 .jumbo .jumbo-box .section-left p {
@@ -175,14 +174,25 @@ body {
     flex-wrap: wrap;
   }
 
-  .text-button-footer {
+  .section-left {
     text-align: center;
+    padding: 2%;
   }
 }
 
 @media screen and (min-width: 767px) {
   .hamburger-menu {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .section-left {
+    text-align: center;
+  }
+
+  .section-left .box-button {
+    justify-content: center;
   }
 }
 
