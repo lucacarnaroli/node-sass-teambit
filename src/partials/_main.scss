@@ -63,10 +63,8 @@
   .center {
     @include display-flex;
     justify-content: center;
-
   .nowrap {
     width: calc(180% / 3);
-
   }
  }
 }

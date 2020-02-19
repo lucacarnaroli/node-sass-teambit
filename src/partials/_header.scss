@@ -58,9 +58,9 @@
     @include display-flex;
     justify-content: center;
     .section-left {
-      width: 530px;
+      width: 500px;
       .text-jumbo {
-        margin-top: 100px;
+        margin-top: 40px;
         font-size: 45px;
         margin-bottom: 50px;
       }
@@ -72,7 +72,7 @@
       }
     }
     .section-rigth {
-      max-width: 530px;
+      width: 530px;
       @include display-flex;
       .img-header {
         width: $width;
@@ -124,7 +124,7 @@
       margin: 20px;
     }
     .hamburger-menu{
-      margin: 20px;  
+      margin: 20px;
     }
   }
 }
