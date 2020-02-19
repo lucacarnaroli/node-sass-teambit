@@ -58,7 +58,7 @@
   margin: auto;
 }
 
-// MEDIAQUERY ----------
+// MEDIAQUERY -----------
 @media screen and (max-width: 1195px) and (min-height: 703px) {
   .center {
     @include display-flex;
