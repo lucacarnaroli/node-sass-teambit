@@ -23,12 +23,14 @@
     background-color: #233569;
   }
 }
-@mixin textFooter {
-  & .fa-arrow-right {
-    font-size: 13px;
-  }
-  & a {
-    text-decoration: none;
-    color: $colorBasicBrow;
-  }
+}
+@mixin display-flex-justy{
+  @include display-flex;
+  justify-content: center;
+}
+@mixin box-section-img {
+  justify-content: center;
+  width: calc(600px / 3);
+  height: 220px;
+  margin: 5%;
 }

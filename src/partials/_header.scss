@@ -1,6 +1,5 @@
 .box-header {
-  // display: flex;
-  // flex-direction: column;
+  margin-bottom: 100px;
 }
 .navbar {
   @include display-flex;
@@ -86,17 +85,24 @@
   flex-wrap: nowrap;
   margin-bottom: 25px;
   @include button;
+  & .or {
+    margin: 10px;
+  }
  }
- & .or {
-   margin: 10px;
- }
-}
+
+
 .icon-button {
   font-size: 16px;
   margin-right: 3px;
 }
 .text-button-footer {
-  @include textFooter;
+  & .fa-arrow-right {
+    font-size: 13px;
+  }
+  & a {
+    text-decoration: none;
+    color: #58402D;
+  }
 }
 // ------------------------
 // MEDIAQUERY

@@ -5,8 +5,13 @@
 }
 
 body {
-  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
   color: #58402D;
+  font-family: "HarmoniaSansProCyr-Regular", Arial, sans-serif;
+  src: local("HarmoniaSansProCyr-Regular"), url("https://teambit.io/wp-content/themes/teambeat/fonts/HarmoniaSansProCyr-Regular_gdi.woff") format("woff");
+}
+
+.box-header {
+  margin-bottom: 100px;
 }
 
 .navbar {
@@ -196,8 +201,96 @@ body {
   }
 }
 
-@font-face {
-  font-family: HarmoniaSansProCyr-Regular, Arial, sans-serif;
-  src: local("HarmoniaSansProCyr-Regular"), url("https://teambit.io/wp-content/themes/teambeat/fonts/HarmoniaSansProCyr-Regular_gdi.woff") format("woff");
+.container {
+  background-color: #FEE7D2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  border-bottom: 1px solid #FEE7D2;
+  margin-top: 80px;
+}
+
+.section-up {
+  margin-top: 100px;
+}
+
+.section-up .text-section {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.section-up .box-section .container-trad1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.section-up .box-section .box-section-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(600px / 3);
+  height: 220px;
+  margin: 5%;
+}
+
+.section-up .box-section .box-section-img img {
+  width: 60%;
+  height: 90px;
+}
+
+.section-up .box-section .box-section-img span {
+  margin-top: 30px;
+  text-align: center;
+  width: 90%;
+}
+
+.section-up .box-section .container-rabbit {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-up .box-section .container-rabbit .box-rabbit-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.section-up .box-section .container-rabbit .box-rabbit-img img {
+  max-width: 100%;
+  height: 300px;
+}
+
+.section-up .box-section .container-rabbit .box-rabbit-img .text-footer-rabbit {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px;
+}
+
+.line {
+  width: 80%;
+  border-bottom: 1px solid lightgrey;
+  margin: auto;
 }
 

@@ -4,7 +4,9 @@
   padding: 0;
 }
 body {
+  color: $colorBasicBrown;
   font-family: 'HarmoniaSansProCyr-Regular', Arial, sans-serif;
-  color: $colorBasicBrow;
-
+  src:
+  local("HarmoniaSansProCyr-Regular"),
+  url('https://teambit.io/wp-content/themes/teambeat/fonts/HarmoniaSansProCyr-Regular_gdi.woff') format("woff");
 }
